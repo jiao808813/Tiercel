@@ -46,7 +46,7 @@ public class Cache {
     
     private final class func defaultDiskCachePathClosure(_ cacheName: String) -> String {
         let dstPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-        return (dstPath as NSString).appendingPathComponent(cacheName)
+        return ((dstPath as NSString).appendingPathComponent("Tiercel") as NSString).appendingPathComponent(cacheName)
     }
     
     
